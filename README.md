@@ -13,7 +13,13 @@
 
 >A simple, elegant and focused card style Hexo theme.
 
-[TOC]
+## Table of Contents
+
+  - [Installation](#installation)
+  - [Configuration](#configuration)
+  - [Somethings](#somethings)
+  - [Maintainers](#maintainers)
+  - [License](#license)
 
 ## Installation
 
