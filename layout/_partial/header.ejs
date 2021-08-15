@@ -1,10 +1,10 @@
 <div class="header">
     <div class="site-title">
-        <a href="/"><%- config.title %></a>
+        <a href="<%- url_for('/') %>"><%- config.title %></a>
     </div>
     <ul class="menu-list">
         <li>
-            <a class="menu-item<%= !is_current('/archives/') ? ' current' : '' %>" href="/articles/">文章</a>
+            <a class="menu-item<%= !is_current('/archives/') ? ' current' : '' %>" href="<%- url_for('articles/') %>">文章</a>
         </li>
         <li>
             <%
@@ -14,7 +14,7 @@
                 })
                 const latestYear = Math.max(...years)
             %>
-            <a class="menu-item<%= is_archive() ? ' current' : '' %>" href="/archives/<%= latestYear %>">归档</a>
+            <a class="menu-item<%= is_archive() ? ' current' : '' %>" href="<%- url_for(`archives/${latestYear}`) %>">归档</a>
         </li>
     </ul>
 </div>
