@@ -1,0 +1,24 @@
+{
+  "name": "hexo-theme-lyusha",
+  "version": "1.1.0",
+  "description": "A simple, elegant and focused card style Hexo theme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qyir/hexo-theme-lyusha.git"
+  },
+  "keywords": [
+    "hexo",
+    "hexo-theme",
+    "git-pages"
+  ],
+  "author": "Qyir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Qyir/hexo-theme-lyusha/issues"
+  },
+  "homepage": "https://github.com/Qyir/hexo-theme-lyusha#readme"
+}
