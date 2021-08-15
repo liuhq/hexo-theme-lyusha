@@ -1,4 +1,4 @@
-# 基础配置
+# base
 avatar: https://api.prodless.com/avatar.png
 index_text: 'Lyusha Hexo Theme'
 description: 'A simple, elegant and focused card style Hexo theme'
@@ -24,12 +24,13 @@ links:
   #   url:
   # - name: sinaweibo
   #   url:
+  ## other social links
   # - name:
   #   url:
   #   icon:
 
-# 文章的 tip “最新”显示
+# about the "latest" mark
 post_latest: true
 
-# post集合和次首页（home 页）路径/文件夹
+# path of posts collection folder and posts list page
 articles_folder: ''
