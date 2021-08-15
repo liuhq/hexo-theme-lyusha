@@ -1,0 +1,54 @@
+@media (max-width: 1080px)
+    .background-text
+        height 300px
+        line-height (@height - 20)
+    .go-home
+        right 1rem
+
+@media (max-width: 800px)
+    .background-text
+        font-size $fs-l
+        height 300px
+        line-height (@height - 16)
+    .header
+        padding 0 20px
+
+@media (max-width: 500px)
+    .background-text
+        font-size $fs-lm
+        height 300px
+        line-height initial
+        top -12rem
+    main.profile-card
+        width 312px
+        height 195px
+        .avatar
+            width 58px
+            height @width
+        .right
+            width (@width / 2)
+            .title
+                font-size $fs-xs
+                letter-spacing .2rem
+                margin-block-end .5rem
+            .info
+                .author
+                    font-size $fs-xs
+                    margin-block-end .45rem
+                .description
+                    font-size $fs-tiny
+                    line-height .85rem
+                    margin-block-start .45rem
+            .links
+                .link-icon
+                    margin-right .75rem
+                    width 1rem
+    .go-home
+        width 100px
+        height @width
+        position absolute
+        left -2rem
+        right 0
+        bottom -24rem
+    .header
+        padding 0 10px

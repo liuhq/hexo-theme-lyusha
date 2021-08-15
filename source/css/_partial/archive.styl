@@ -1,0 +1,99 @@
+.archive-content
+    { $content }
+    .archive-list
+        display flex
+        justify-content center
+        padding-inline-start 0
+        margin-block-start 0
+        margin-block-end 0
+        list-style none
+        .archive-list-item
+            display flex
+            align-items center
+            font-size $fs-default
+            // padding 0 .5rem  // show_count
+            border-radius $br-m
+            margin 0 .5rem
+            // position relative  // show_count
+            transition all $td-default ease-out
+            user-select none
+            &:hover:not(.current)
+                background $lightgrey
+            .archive-list-link
+                display inline-block
+                // padding .5rem 2rem .5rem 0  // show_count
+                padding .5rem
+                border-radius $br-m
+                // margin 0 -1.5rem 0 0  // show_count
+                // position relative  // show_count
+                // z-index 1  // show_count
+                transition all $td-default ease
+                &:link
+                &:visited
+                    color $grey
+            // .archive-list-count  // show_count
+            //     display inline-block
+            //     width 20px
+            //     height 20px
+            //     line-height @height
+            //     font-size $fs-tiny
+            //     text-align center
+            //     color $grey
+            //     background $lightgrey
+            //     border-radius $br-s
+        .current
+            background $maincolor-100
+            .archive-list-link
+                &:link
+                &:visited
+                &:hover
+                &:active
+                    color $white
+            // .archive-list-count  // show_count
+            //     color $lightgrey
+            //     background @background
+    .month-list
+        width 100%
+        padding 3rem 3rem
+        @media (max-width: 500px)
+            padding 1rem 1rem
+        border-radius $br-xl
+        background $seccolor-80
+        box-shadow $shadow-s
+        margin-top 3rem
+        transition all $td-default ease
+        list-style none
+        &:hover
+            box-shadow $shadow-m
+        .month-item
+            margin-bottom 2.4rem
+            .month
+                width 100px
+                font-size $fs-lm
+                color $maincolor-80
+                opacity .5
+                margin-block-start 0
+                margin-block-end 1em
+                user-select none
+            .post-list
+                padding-inline-start 50px
+                list-style none
+                .item
+                    display flex
+                    align-items center
+                    margin-bottom .5rem
+                    &:hover .gg-shape-circle
+                        color $black
+                    &:hover a
+                        padding-left 1.5rem
+                    .gg-shape-circle
+                        width 8px
+                        height 8px
+                        border 2px solid
+                        color $grey
+                        margin-right 1rem
+                    a
+                        display block
+                        padding 2px
+                        word-break break-all
+                        transition all $td-default ease-out

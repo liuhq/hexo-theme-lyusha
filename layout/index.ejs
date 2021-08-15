@@ -1,0 +1,31 @@
+<p class="background-text">
+    <%= theme.index_text %>
+</p>
+<main class="profile-card">
+    <img class="avatar" src="<%- theme.avatar %>" alt="avatar">
+    <div class="right">
+        <h1 class="title">
+            <%= config.title %>
+        </h1>
+        <section class="info">
+            <h2 class="author">
+                <%= config.author %>
+            </h2>
+            <p class="description">
+                <%= theme.description || config.description %>
+            </p>
+        </section>
+        <section class="links">
+            <% theme.links.forEach((v, i)=> { %>
+                <div class="link-icon">
+                    <a href="<%- v.name == 'email' ? `mailto:${v.url}` : v.url %>">
+                        <img src="<%- v.icon || url_for(`fonts/icons/${v.name}.svg`) %>" alt="<%- `${v.name} icon` %>">
+                    </a>
+                </div>
+                <% }) %>
+        </section>
+    </div>
+</main>
+<a class="go-home" href="/articles/">
+    <img src="<%- url_for('fonts/icons/double_arrow.svg') %>" alt="go home">
+</a>

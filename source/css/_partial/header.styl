@@ -1,0 +1,54 @@
+.header
+    display flex
+    justify-content space-between
+    align-items center
+    box-sizing border-box
+    max-width 1920px
+    height $header-top-h
+    padding 0 40px
+    background $seccolor-100
+    margin 0 auto
+    // box-shadow $shadow-s
+    // 粘滞顶部导航栏
+    // position fixed
+    // top 0
+    .site-title
+        a
+            &:link
+            &:visited
+                color $maincolor-80
+            &:hover
+            &:active
+                color $maincolor-100
+    .menu-list
+        display flex
+        justify-content space-between
+        width 9rem
+        padding-inline-start 0
+        margin-block-start 0
+        margin-block-end 0
+        list-style none
+        .menu-item
+            display block
+            height (@height / 5) * 4
+            line-height @height
+            padding 0 (@width / 8)
+            border-radius $br-m
+            text-align center
+            transition all $td-default ease
+            &:hover
+                background $lightgrey
+        .current
+            font-weight 600
+            &:link
+            &:visited
+            &:hover
+            &:active
+                color $black
+        a
+            &:link
+            &:visited
+                color $grey
+            &:hover
+            &:active
+                color $black

@@ -1,0 +1,51 @@
+@import '_partial/variable'
+
+:root
+    font-size $fs-default
+    font-family $font-family
+    overflow-y auto  // scrollbar
+    overflow-x hidden  // scrollbar
+    &::-webkit-scrollbar
+        width 8px
+        height 8px
+    &::-webkit-scrollbar-thumb
+        height 40px
+        border-radius $br-xl
+        background-color $lightgrey
+        &:hover
+            background-color $seccolor-120
+:root
+    body
+        overflow hidden  // scrollbar
+        font-size $fs-default
+        width 100vw  // scrollbar
+        color $black
+        background $seccolor-100
+        position absolute  // scrollbar
+a
+    text-decoration none
+    &:link
+    &:visited
+    &:hover
+    &:active
+        color $black
+.container
+    min-height 100vh
+    position relative
+.wrap
+    width 100%
+    // 启用粘滞顶部导航栏时启用
+    // padding-top $header-top-h + 20px
+    padding-top $header-top-h
+    padding-bottom 8rem
+
+@import '_partial/components'
+@import '_partial/header'
+@import '_partial/footer'
+@import '_partial/index'
+@import '_partial/articles'
+@import '_partial/post'
+@import '_partial/archive'
+@import '_partial/category'
+@import '_partial/tag'
+@import '_partial/media'

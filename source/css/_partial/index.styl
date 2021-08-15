@@ -1,0 +1,102 @@
+.background-text
+    display block
+    font-size $fs-xh
+    font-weight 900
+    width 100%
+    height 300px
+    line-height (@height - 32)
+    letter-spacing .5rem
+    text-align center
+    color $grey
+    position absolute
+    top 0
+    bottom 0
+    margin auto
+    z-index 1
+    user-select none
+main.profile-card
+    display flex
+    justify-content space-evenly
+    align-items center
+    width 480px
+    height 300px
+    border-top 2px #fff solid
+    border-left 2px #fff solid
+    border-radius $br-l
+    background rgba(255, 255, 255, .1)
+    box-shadow $shadow-xl
+    backdrop-filter blur(6px)
+    position absolute
+    top 0
+    bottom 0
+    left 0
+    right 0
+    margin auto
+    z-index 2
+    transition all $td-slow ease-out
+    &:hover
+        // transform perspective(1px) scale(1.0625) translateZ(0)
+        transform translate(0, -10px)
+    .avatar
+        width 90px
+        height @width
+        border 2px $grey dashed
+        border-radius $br-circle
+        margin-block-start 0
+        margin-block-end 0
+        margin-inline-start 0
+        margin-inline-end 0
+    .right
+        width (@width / 2)
+        .title
+            font-size $fs-sm
+            letter-spacing .4rem
+            margin-block-start 0
+            margin-block-end 1rem
+        .info
+            .author
+                font-size $fs-s
+                font-weight 500
+                margin-block-start 0
+                margin-block-end .75rem
+            .description
+                font-size $fs-xs
+                font-weight 300
+                line-height 1.25rem
+                margin-block-start .75rem
+                margin-block-end 1rem
+        .links
+            display flex
+            align-items center
+            .link-icon
+                margin-right 1.2rem
+                width 1.5rem
+.go-home
+    display flex
+    justify-content center
+    align-items center
+    width 100px
+    height @width
+    position absolute
+    right 4rem
+    top 0
+    bottom 0
+    margin auto
+    z-index 1
+    img
+        width 50%
+        height @width
+        opacity .5
+        animation-name GoHome
+        animation-duration .4s
+        animation-iteration-count infinite
+        animation-direction alternate
+        animation-timing-function ease-in
+@keyframes GoHome {
+    from {
+        transform translateX(0)
+    }
+    to {
+        transform translateX(30px)
+    }
+}

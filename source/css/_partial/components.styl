@@ -1,0 +1,87 @@
+// components
+
+//nav
+// back
+.nav
+    position relative
+    max-width 700px
+    @media (max-width: 800px)
+        max-width 650px
+    margin auto
+    margin-bottom 3rem
+    .back
+        color $maincolor-80
+        position absolute
+        top 7px
+        left 180px
+        transition all $td-default ease-out
+        &:hover
+        &:active
+            color $maincolor-120
+    // tab
+    .tab
+        .tab-list
+            display flex
+            justify-content center
+            padding-inline-start 0
+            margin-block-start 0
+            margin-block-end 0
+            list-style none
+            .item
+                display flex
+                align-items center
+                border-radius $br-m
+                margin 0 .5rem
+                transition all $td-default ease
+                user-select none
+                &:hover:not(.current)
+                    background $lightgrey
+                .to-tab
+                    display inline-block
+                    padding .5rem
+                    border-radius $br-m
+                    transition all $td-default ease
+                    &:link
+                    &:visited
+                        color $grey
+                    &:hover
+                    &:active
+                        color $black
+            .dot
+                display flex
+                align-items center
+                color $grey
+                margin 0 .5rem
+            .current
+                background $maincolor-100
+                .to-tab
+                    &:link
+                    &:visited
+                    &:hover
+                    &:active
+                        color $white
+
+
+// paginator
+.paginator
+    text-align center
+    margin 3.5rem 0 2rem
+    .page-number
+    .extend
+    .space
+        display inline-block
+        font-size $fs-tiny
+        width 2rem
+        height @width
+        line-height @height
+        border-radius $br-m
+        color $grey
+        margin 0 5px
+        &:hover:not(.current)
+            background $lightgrey
+    .current
+        color $white
+        background $maincolor-100
+    .extend
+        padding 0 8px
+        color $maincolor-100

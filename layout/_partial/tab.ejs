@@ -1,0 +1,30 @@
+<nav class="nav">
+    <% if (is_category()) { %>
+        <a class="back" href="/categories/"><i class="gg-chevron-left-o"></i></a>
+    <% } else if (is_tag()) { %>
+        <a class="back" href="/tags/"><i class="gg-chevron-left-o"></i></a>
+    <% } %>
+    <div class="tab">
+        <ul class="tab-list">
+            <li class="item<%= is_current('/articles/') ? ' current' : '' %>">
+                <a href="/articles/" class="to-tab">所有</a>
+            </li>
+            <li class="dot">•</li>
+            <li class="item<%= is_current('/categories/')
+                                ? ' current'
+                                : is_category()
+                                    ? ' current'
+                                    : '' %>">
+                <a href="/categories/" class="to-tab">分类</a>
+            </li>
+            <li class="dot">•</li>
+            <li class="item<%= is_current('/tags/')
+                                ? ' current'
+                                : is_tag()
+                                    ? ' current'
+                                    : '' %>">
+                <a href="/tags/" class="to-tab">标签</a>
+            </li>
+        </ul>
+    </div>
+</nav>
