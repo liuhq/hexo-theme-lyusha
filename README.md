@@ -2,9 +2,8 @@
 
 [Demo](https://blog.qoqyir.com/hexo-theme-lyusha)
 
-<img src="./screenshot/index.png" style="border-radius: 10px; box-shadow: 0 8px 8px -8px rgba(0, 0, 0, .5)">
+![index.png](./screenshot/index.png)
 
-<br>
 <br>
 
 [more pictures](./screenshot/)
