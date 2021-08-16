@@ -1,6 +1,6 @@
 # hexo-theme-lyusha
 
-[Demo](https://blog.qoqyir.com/hexo-theme-lyusha)
+<a href="https://blog.qoqyir.com/hexo-theme-lyusha" target="_blank">Demo</a>
 
 ![index.png](./screenshot/index.png)
 
