@@ -147,7 +147,7 @@ This project is currently suspended, because some things make me busy. But don't
 
 ## Maintainers
 
-[@QoQiyu]([https://github.com/Qyir](https://github.com/qoqiyu)
+[@QoQiyu](https://github.com/qoqiyu)
 
 ## License
 
