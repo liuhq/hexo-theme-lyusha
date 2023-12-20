@@ -1,25 +1,25 @@
-hexo.extend.generator.register('index', locals => {
+hexo.extend.generator.register("index", (locals) => {
     return {
-        path: '',
-        layout: 'index',
+        path: "",
+        layout: "index",
         data: {
-            __index: true
-        }
+            __index: true,
+        },
     };
 });
 
-hexo.extend.generator.register('categories', locals => {
+hexo.extend.generator.register("categories", (locals) => {
     return {
-        path: '/categories/',
+        path: "/categories/",
         data: locals.posts,
-        layout: 'category'
-    }
+        layout: "category",
+    };
 });
 
-hexo.extend.generator.register('tags', locals => {
+hexo.extend.generator.register("tags", (locals) => {
     return {
-        path: '/tags/',
+        path: "/tags/",
         data: locals.posts,
-        layout: 'tag'
-    }
+        layout: "tag",
+    };
 });

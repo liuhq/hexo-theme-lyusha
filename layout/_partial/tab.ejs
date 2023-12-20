@@ -1,8 +1,12 @@
 <nav class="nav">
     <% if (is_category()) { %>
-        <a class="back" href="<%- url_for('categories/') %>"><i class="gg-chevron-left-o"></i></a>
+    <a class="back" href="<%- url_for('categories/') %>"
+        ><i class="gg-chevron-left-o"></i
+    ></a>
     <% } else if (is_tag()) { %>
-        <a class="back" href="<%- url_for('tags/') %>"><i class="gg-chevron-left-o"></i></a>
+    <a class="back" href="<%- url_for('tags/') %>"
+        ><i class="gg-chevron-left-o"></i
+    ></a>
     <% } %>
     <div class="tab">
         <ul class="tab-list">
@@ -10,19 +14,15 @@
                 <a href="<%- url_for('articles/') %>" class="to-tab">所有</a>
             </li>
             <li class="dot">•</li>
-            <li class="item<%= is_current('/categories/')
-                                ? ' current'
-                                : is_category()
-                                    ? ' current'
-                                    : '' %>">
+            <li
+                class="item<%= is_current('/categories/') ? ' current' : is_category() ? ' current' : '' %>"
+            >
                 <a href="<%- url_for('categories/') %>" class="to-tab">分类</a>
             </li>
             <li class="dot">•</li>
-            <li class="item<%= is_current('/tags/')
-                                ? ' current'
-                                : is_tag()
-                                    ? ' current'
-                                    : '' %>">
+            <li
+                class="item<%= is_current('/tags/') ? ' current' : is_tag() ? ' current' : '' %>"
+            >
                 <a href="<%- url_for('tags/') %>" class="to-tab">标签</a>
             </li>
         </ul>
