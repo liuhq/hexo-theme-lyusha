@@ -1,6 +1,6 @@
 # hexo-theme-lyusha
 
-<a href="https://sample.qoqyir.com/hexo-theme-lyusha/" target="_blank">Demo</a>
+<a href="http://sample.qoqyir.com/hexo-theme-lyusha/" target="_blank">Demo</a>
 
 ![index.png](./screenshot/index.png)
 
@@ -22,7 +22,7 @@
 
 ## Installation
 
-```
+```shell
 # install theme files
 npm install hexo-theme-lyusha --save
 
@@ -41,46 +41,46 @@ npm install markdown-it-pangu --save
 Theme config (Click here for details)
 </summary>
 
-```
+```yml
 # create a "_config.lyusha.yml" file in the root directory
 # and add the following content to this file
 
 # base
-avatar: https://api.prodless.com/avatar.png
-index_text: 'Lyusha Hexo Theme'
-description: 'A simple, elegant and focused card style Hexo theme'
+avatar: imgs/avatar.png
+index_text: "Lyusha Hexo Theme"
+description: "A simple, elegant and focused card style Hexo theme"
 language: zh-CN
-footer_author_link: https://github.com/Qyir/
+footer_author_link: https://github.com/liuhq
 
 # links
 # https://simpleicons.org/
 links:
-  - name: email
-    url: voyoaugi@gmail.com
-  - name: github
-    url: https://github.com/Qyir/
-  - name: twitter
-    url: https://twitter.com/QoQyir
-  - name: bilibili
-    url: https://space.bilibili.com/89553968
-  # - name: instagram
-  #   url:
-  # - name: telegram
-  #   url:
-  # - name: zhihu
-  #   url:
-  # - name: sinaweibo
-  #   url:
-  ## other social links
-  # - name:
-  #   url:
-  #   icon:
+    - name: email
+      url: hora.liu@outlook.com
+    - name: github
+      url: https://github.com/liuhq
+    - name: twitter
+      url: https://twitter.com
+    - name: bilibili
+      url: https://space.bilibili.com
+    # - name: instagram
+    #   url:
+    # - name: telegram
+    #   url:
+    # - name: zhihu
+    #   url:
+    # - name: sinaweibo
+    #   url:
+    ## other social links
+    # - name:
+    #   url:
+    #   icon:
 
 # about the "latest" mark
 post_latest: true
 
 # path of posts collection folder and posts list page
-articles_folder: ''
+articles_folder: ""
 ```
 </details>
 
@@ -89,7 +89,7 @@ articles_folder: ''
 Hexo config (Click here for details)
 </summary>
 
-```
+```yml
 ...
 # add to hexo '_config.yml'
 
@@ -147,9 +147,9 @@ This project is currently suspended, because some things make me busy. But don't
 
 ## Maintainers
 
-[@QoQiyu](https://github.com/qoqiyu)
+[@Horace Liu](https://github.com/liuhq)
 
 ## License
 
-[MIT](./LICENSE) © Qodallr Liu
+[MIT](./LICENSE) © Horace Liu
 

@@ -1,24 +1,24 @@
 {
-  "name": "hexo-theme-lyusha",
-  "version": "1.1.1",
-  "description": "A simple, elegant and focused card style Hexo theme.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Qyir/hexo-theme-lyusha.git"
-  },
-  "keywords": [
-    "hexo",
-    "hexo-theme",
-    "git-pages"
-  ],
-  "author": "Qyir",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Qyir/hexo-theme-lyusha/issues"
-  },
-  "homepage": "https://blog.qoqyir.com/hexo-theme-lyusha"
+    "name": "hexo-theme-lyusha",
+    "version": "1.1.2",
+    "description": "A simple, elegant and focused card style Hexo theme.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/liuhq/hexo-theme-lyusha.git"
+    },
+    "keywords": [
+        "hexo",
+        "hexo-theme",
+        "git-pages"
+    ],
+    "author": "Horace Liu",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/liuhq/hexo-theme-lyusha/issues"
+    },
+    "homepage": "http://sample.qoqyir.com/hexo-theme-lyusha/"
 }
